@@ -243,23 +243,13 @@
                 <li class="mui-table-view-cell mui-collapse">
                         <a class="mui-navigate-right" href="#">{{ }}</a>
                         <div class="mui-collapse-content">
+                            {{each result value}}
                             <ul class="product">
                                 <li>
                                     <a href="javascript:void(0);">{{ }}</a>
                                 </li>
-                                <li>
-                                    <a href="javascript:void(0);">{{ }}</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">{{ }}</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">{{ }}</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">{{ }}</a>
-                                </li>
                             </ul>
+                            {{/each}} 
                         </div>
                     </li>
             </ul>
