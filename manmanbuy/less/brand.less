@@ -1,0 +1,117 @@
+@import 'base.css';
+body,
+html {
+    height: 100%;
+    padding-top: 0.8rem;
+    background-color: #f2f2f2;
+}
+
+#form-search {
+    input {
+        margin-bottom: 0;
+    }
+}
+
+#nav {
+    height: 0.30rem;
+    line-height: 0.30rem;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.14rem;
+}
+
+#main {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#hot {
+    margin-top: 0.05rem;
+    padding: 0 0.05rem;
+    height: 0.38rem;
+    .hot {
+        width: 100%;
+        height: 0.38rem;
+        font-size: 0.18rem;
+    }
+}
+
+#content {
+    span.num {
+        width: 0.2rem;
+        height: 0.2rem;
+        line-height: 0.2rem;
+        text-align: center;
+        margin-right: 0.1rem;
+    }
+}
+
+#product {
+    .title {
+        padding-left: 0.1rem;
+        height: 0.3rem;
+        line-height: 0.3rem;
+        font-size: 0.16rem;
+        font-weight: 500;
+    }
+    .content {
+        .mui-table-view .mui-media-object {
+            max-width: 1rem;
+        }
+        .product-right {
+            >div {
+                padding: 0.05rem;
+            }
+            .product-name {
+                /* 强制让文本换行或者不换行 normal自动 */
+                color: black;
+                white-space: normal;
+            }
+            .product-price {
+                span {
+                    font-size: 0.2rem;
+                    font-weight: 600;
+                    color: #ea3952;
+                }
+            }
+            .product-params {
+                display: flex;
+                color: #666;
+                font-size: 0.12rem;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+#comment {
+    .title {
+        padding-left: 0.1rem;
+        height: 0.3rem;
+        line-height: 0.3rem;
+        font-size: 0.16rem;
+        font-weight: 500;
+    }
+    ul {
+        li {
+            background-color: #f2f2f2;
+            .protit {
+                .tit {
+                    white-space: normal;
+                    color: #666;
+                }
+            }
+            .plbox {
+                margin-top: 0.05rem;
+                background-color: #f8f8f8;
+                padding: 0.1rem;
+                .name {
+                    color: #ccc;
+                    margin-bottom: 0.1rem;
+                }
+            }
+        }
+    }
+}

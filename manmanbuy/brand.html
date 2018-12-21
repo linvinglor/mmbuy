@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="lib/mui/css/mui.min.css" />
+		<link rel="stylesheet" type="text/less" href="less/brand.less" />
+		<script src="lib/less/less.js"></script>
+		<script src="js/rem.js"></script>
+		<title>品牌分类</title>
+	</head>
+
+	<body>
+		<header id="header" class="header">
+			<div class="logo">
+				<a href="index.html" title="慢慢买"><img src="images/header_logo.png" alt=""></a>
+			</div>
+			<div class="appdown">
+				<a href="##"><img src="images/header_app.png" alt="手机app下载"></a>
+			</div>
+		</header>
+		<section id="form-search">
+			<form action="#" class="search"><input type="search" name="" id="" placeholder="请输入你想比价的商品"> <input type="button" class="btnsearch" value="搜索"></form>
+		</section>
+		<main id="main">
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<nav id="nav">
+						<a href="index.html">首页</a> >
+						<a href="brandTitle.html">品牌大全</a>
+					</nav>
+					<section id="hot">
+						<button type="button" class="mui-btn hot">热门品牌排行</button>
+					</section>
+					<section id="content">
+
+						<ul class="mui-table-view brandul">
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">电视</a>
+								<div class="mui-collapse-content">
+									<p>面板1子内容</p>
+								</div>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">空调</a>
+								<div class="mui-collapse-content">
+									<p>面板1子内容</p>
+								</div>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">影音</a>
+								<div class="mui-collapse-content">
+									<p>面板1子内容</p>
+								</div>
+							</li>
+							<li class="mui-table-view-cell mui-collapse">
+								<a class="mui-navigate-right" href="#">冰箱</a>
+								<div class="mui-collapse-content">
+									<p>面板1子内容</p>
+								</div>
+							</li>
+				
+						</ul>
+					</section>
+					<footer id="ctl00_foot">
+						<div class="foot_top">
+							<a href="##">登录</a>
+							<a href="##">注册</a>
+							<a href="##" style="width: 40%; border: 0;" id="rtt"><img src="" width="16" height="16">返回顶部</a>
+						</div>
+						<div class="footer">
+							<p>
+								<a href="##" style="color: #ff4e49">手机APP下载</a>
+								<a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版 -- 掌上比价平台</a>
+							</p>
+							<p>m.manmanbuy.com</p>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</main>
+		<script type="text/html" id="brandtpl">
+			{{each result value}}
+			<li class="mui-table-view-cell mui-collapse" data-id="{{value.brandTitleId}}">
+				<a class="mui-navigate-right" href="#">{{value.brandTitle}}</a>
+				
+			</li>
+			{{/each}}
+		</script>
+
+		<script src="lib/artTemplate/template-web.js"></script>
+		<script src="lib/zepto/zepto.min.js"></script>
+		<script src="lib/mui/js/mui.min.js"></script>
+		<script src="js/brand.js"></script>
+	</body>
+
+</html>
