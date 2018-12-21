@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="less/index.less">
+    <script src="lib/less/less.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" title="" class="logo">
+            <img src="http://static.manmanbuy.com/m/img/mlogo.png" alt="">
+        </a>
+        <form action="#">
+            <input type="search" name="">
+        </form>
+        <a href="#" title="" class="download">
+            下载
+        </a>
+    </header>
+    <main id="main">
+        <nav id="nav">
+            <div class="mui-row">
+                <div class="mui-col-xs-3">
+                    <a href="#" title="">
+                        <img src="images/gengduo.png" alt="">
+                        <p>比价搜索</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#" title="">
+                        <img src="images/gengduo.png" alt="">
+                        <p>比价搜索</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#" title="">
+                        <img src="images/gengduo.png" alt="">
+                        <p>比价搜索</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#" title="">
+                        <img src="images/gengduo.png" alt="">
+                        <p>比价搜索</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#" title="">
+                        <img src="images/gengduo.png" alt="">
+                        <p>比价搜索</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#" title="">
+                        <img src="images/gengduo.png" alt="">
+                        <p>比价搜索</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#" title="">
+                        <img src="images/gengduo.png" alt="">
+                        <p>比价搜索</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-3">
+                    <a href="#" title="">
+                        <img src="images/gengduo.png" alt="">
+                        <p>比价搜索</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div id="productList">
+            <div class="title">
+                <span>超值折扣推荐</span>
+            </div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="left">
+                                <img src="http://wnzk-img.zuyushop.com/r_img/img/20181029/16/4ea84814d68341d2a9bf39105d3cec26.jpg" alt="">
+                            </div>
+                            <div class="right">
+                                <p class="product-name">
+                                    双11预售：鸿星尔克 男童棉马甲
+                                    <span>89元包邮 （付20元定金立减40元）</span>
+                                </p>
+                                <div class="product-from">
+                                    天猫商城 | 10-29 17:04
+                                    <i class="icon-common"></i>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <script id="indexMenuTpl" type="text/html">
+        {{each result value}}
+        <div class="mui-col-xs-3">
+            <a href="{{value.titlehref}}" title="">
+                <!-- 标签属于富文本 丰富的文本 当前的标签属于富文本 -->
+                <!-- 如果要解析富文本需要带@符号 -->
+                {{@value.img}}
+                <p>{{value.name}}</p>
+            </a>
+        </div>
+        {{/each}}
+    </script>
+    <script id="moneyCtrlTpl" type="text/html">
+        {{each result value}}
+        <li>
+            <a href="#">
+                <div class="left">
+                    {{@value.productImgSm}}
+                </div>
+                <div class="right">
+                    <p class="product-name">
+                        {{value.productName}}
+                        <span>{{value.productPinkage}}</span>
+                    </p>
+                    <div class="product-from">
+                        {{value.productFrom}} | {{value.productTime}}
+                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                        <span>{{value.productComCount.replace('有','').replace('人评论','')}}</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
