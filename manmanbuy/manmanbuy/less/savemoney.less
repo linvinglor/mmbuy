@@ -1,0 +1,82 @@
+body{
+    padding-top: 50px;
+    // padding-bottom: .96rem;
+}
+//头部样式
+#header {
+    display: flex;
+    .back {
+        width: .5rem;
+        position: absolute;
+        a {
+            display: block;
+            width: .48rem;
+            height: .48rem;
+            text-align: center;
+            i {
+                font-size: .4rem;
+                color: #fff;
+                font-weight: normal;
+            }
+        }
+    }
+    h3 {
+        flex: 1;
+        text-align: center;
+        line-height: .5rem;
+        color: #fff;
+        font-size: .18rem;
+    }
+}
+
+//主体样式
+#mian {
+    position: relative;
+    ul{
+        padding-top: .2rem;
+        font-size: .14rem;
+        li {
+            width: 100%;
+            height: 128px;
+            a {
+            display: flex;
+                .img-box {
+                    float: left;
+                    padding-left: .18rem;
+                    img {
+                        width: .85rem;
+                        height: .85rem;
+                    }
+                }
+                .wares-right{
+                    flex: 1;
+                    padding-right: .08rem;
+                    padding-left: .24rem;
+                    .wares-right-top{
+                        .productPinkage{
+                            color: red;
+                        }
+                    }
+                    .wares-right-bottom{
+                        margin-top: .3rem;
+                        color: #a1a1a1;
+                        .productFrom{
+                            font-size: .12rem;
+                        }
+                        .productComCount{
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .icon{
+        position: fixed;
+        right: .2rem;
+        bottom: 1.2rem;
+        .fa{
+            font-size: .2rem;
+        }
+    }
+}
