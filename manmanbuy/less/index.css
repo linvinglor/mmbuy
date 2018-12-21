@@ -1,0 +1,69 @@
+/* 乐淘的主题颜色 */
+/* a的颜色 */
+/* 边框颜色 */
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+html {
+  font-size: 100px;
+}
+body {
+  font-size: 0.16rem;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  color: #666;
+}
+#header {
+  display: flex;
+  background-color: #fff;
+  height: 45px;
+}
+#header .logo {
+  width: 80px;
+  padding-top: 10px;
+}
+#header .logo img {
+  width: 100%;
+}
+#header form {
+  flex: 1;
+  padding-top: 10px;
+}
+#header form > input {
+  width: 100%;
+  height: 30px;
+  border: 0px;
+  border-radius: 15px;
+  background-color: #eee;
+}
+#header .download {
+  width: 60px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 14px;
+  color: red;
+}
+#main #nav a {
+  display: block;
+  text-align: center;
+}
+#main #nav a img {
+  width: 70px;
+  height: 70px;
+}
+#main #productList .content ul li a {
+  display: flex;
+}
+#main #productList .content ul li a .left {
+  width: 120px;
+}
+#main #productList .content ul li a .left img {
+  width: 106px;
+}
+#main #productList .content ul li a .right {
+  flex: 1;
+}

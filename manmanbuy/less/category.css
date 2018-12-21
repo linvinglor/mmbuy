@@ -1,0 +1,82 @@
+body {
+  background-color: #fff;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #333;
+}
+#header {
+  background-color: #ff841d;
+  height: 50px;
+  padding: 10px 15px;
+}
+#header .logo {
+  width: 185px;
+  height: 30px;
+  float: left;
+}
+#header .logo > img {
+  width: 100%;
+}
+#header .app {
+  width: 34px;
+  height: 30px;
+  float: right;
+}
+#header .app > img {
+  width: 100%;
+}
+#search form {
+  display: flex;
+  padding: 10px;
+}
+#search form > input {
+  flex: 1;
+  height: 30px;
+  border-radius: 15px;
+  text-align: left;
+  font-size: 12px;
+}
+#search form > button {
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+}
+#main .mui-navigate-right {
+  background-color: #f1f1f1;
+}
+#main .mui-collapse-content {
+  padding: 0;
+}
+#main .mui-collapse-content .product {
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+}
+#main .mui-collapse-content .product li {
+  border-bottom: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  width: 33.33%;
+}
+#main .mui-collapse-content .product li a {
+  display: block;
+  height: .5rem;
+  line-height: .5rem;
+  width: 100%;
+  cursor: pointer;
+  font-size: .16rem;
+}
+#main .Brand-ranking {
+  background-color: #ff4e49;
+  height: 0.4rem;
+}
+#main .Brand-ranking a {
+  line-height: 0.4rem;
+  color: #fff;
+  margin-left: 0.2rem;
+}
