@@ -1,0 +1,99 @@
+@import 'base.css';
+body{
+    background-color: #f1f1f1;
+    padding-top: 0.8rem;
+}
+#main {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#header {
+    text-align: center;
+    background-color: #ff8b00;
+   color: white;
+    .fl{
+        position: absolute;
+        font-size: 0.20rem;
+        left: 0;
+        top:0.07rem;
+    }
+    .topName {
+        font-size: 0.16rem;
+        line-height: 0.35rem;
+    }
+    
+}
+
+#nav {
+    width: 100%;
+    position: fixed;
+    top: 50px;
+//  padding: 10px;
+    background-color: #fff;
+    z-index: 999;
+    display: flex;
+    .left {
+        flex: 1;
+        ul {
+            display: flex;
+            li {
+                flex: 1;
+                float: left;
+            }
+        }
+    }
+    .right {
+        width: 0.4rem;
+        text-align: center;
+        line-height: 0.4rem;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #CCCCCC;
+    }
+}
+
+//主体
+#main {
+    .content{
+        height: 100%;
+        ul{
+            li{
+                a{
+                    display: block;
+                    margin: 0.04rem;
+                    background-color: #fff;
+                    .pic{
+                       width: 100%;
+                        height: auto;
+                        text-align: center;
+                        overflow: hidden;
+                        img{
+                            width: 1.5rem;
+                            height: 1.5rem;
+                        }
+                    }
+                    .title {
+                        font-size: 0.10rem;
+                    }
+                    .other{
+                        padding: 0.05rem;
+                        height: 0.35rem;
+                        line-height: 0.3rem;
+                        .price{
+                            font-size: 0.16rem;
+                            color: #ff8b00;
+                        }
+                        .btn-add{
+                            font-size: 0.10rem;
+                        }
+                       
+                        
+                    }
+                    
+                }
+                float: left;
+                width: 50%;
+            }
+        }
+    }
+}

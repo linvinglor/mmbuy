@@ -2,6 +2,8 @@ $(function(){
 	
 	var baseUrl = 'http://localhost:9090';
 	var id= getQueryString('id');
+	var bigtitle =getQueryString('title');
+	$('.hot').text(bigtitle)
 	console.log(id)
 	//排行榜
 	$.ajax({

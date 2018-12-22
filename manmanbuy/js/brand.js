@@ -11,11 +11,13 @@ $(function() {
 			$('.brandul').html(html);
 		}
 	});
+	var bigtitle = '平板电视十大品牌';
 	var brandtitleid = 0
 	$('#content').on('tap', '.brandul li', function() {
-		id = $(this).data('id')
+		bigtitle = $(this).data('title');
+		id = $(this).data('id');
 		console.log(id)
-		location='brandtitle.html?id='+id;
+		location='brandtitle.html?id='+id+'&title='+bigtitle;
 	})
 	
 	
