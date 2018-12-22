@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>比价导航页-徐立</title>
+                                <!-- 引包 -->
+    <!-- 1. 引入mui的CSS -->
+    <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+    <!-- 2. 引入字体图标的CSS -->
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <!-- 3. 引入分类的less文件 -->
+    <link rel="stylesheet/less" href="less/category.less">
+    <!-- 4. 引入less.js编译器文件 -->   
+    <script src="lib/less/less.js"></script>  
+    <!-- 5. 在页面前引入rem.js 等页面加载出来之前生效样式马上执行 -->
+    <script src="js/rem.js"></script>
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header id="header" class="header">
+        <div class="logo">
+            <a href="index.html" title="慢慢买"><img src="images/header_logo.png" alt=""></a>
+        </div>
+        <div class="appdown">
+            <a href="#"><img src="images/header_app.png" alt="手机app下载"></a>
+        </div>
+    </header>
+    <section id="form-search">
+        <form action="#" class="search"><input type="search" name="" id="" placeholder="请输入你想比价的商品"> <input type="button" value="搜索"></form>
+    </section>
+
+    <!-- 导航区域 -->
+    <main id="main">
+          
+        <!-- 折叠区域 -->
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell mui-collapse">
+                <a class="mui-navigate-right" href="#">大家电</a>
+                <div class="mui-collapse-content">
+                    <ul class="product">
+                        <li>
+                            <a href="javascript:void(0);">电视</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">空调</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">影院</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">冰箱</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">DVD</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+           
+        </ul>
+        <!-- 品牌排行 -->
+        <section class="Brand-ranking">
+            <a>品牌排行</a>
+            <a></a>
+        </section>
+   
+    </main>
+    <!-- 底部区域 -->
+    <footer id="ctl00_foot">
+        <div class="foot_top">
+            <a href="##">登录</a>
+            <a href="##">注册</a>
+            <a href="##" style="width: 40%; border: 0;" id="rtt"><img src="images/top.png" width="16" height="16">返回顶部</a>
+        </div>
+        <div class="footer">
+            <p>
+                <a href="##" style="color: #ff4e49">手机APP下载</a>
+                <a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版 -- 掌上比价平台</a>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+
+    <!--页面渲染区域 -->
+    <!-- 一级列表渲染 -->
+    <script id="firstCategoryTpl" type="text/html">
+        {{each result value}}
+      
+                <li class="mui-table-view-cell mui-collapse categoryFirst" data-id="{{value.titleId}}">
+                        <a class="mui-navigate-right" href="#">
+                            {{value.title}}
+                        </a>
+                        <div class="mui-collapse-content"></div>
+                    </li>
+           
+        {{/each}}
+    </script>
+    
+    <!-- 二级列表渲染 -->
+    <script id="secondCategoryTpl" type="text/html">
+        <ul class="product">
+        {{each result value}}
+   
+        <li>
+            <a href="productList.html?categoryid={{value.titleId}}">
+                {{value.category}}
+            </a>
+        </li>
+    
+    {{/each}} 
+</ul>
+</script>
+                                       <!-- JS的引包 -->
+      <!-- 1. 引入mui的JS -->
+      <script src="lib/mui/js/mui.js"></script>
+      <!-- 2. 引入模板引擎的 注意引入template-web.js 最新版最简洁的  -->
+      <script src="lib/artTemplate/template-web.js"></script>
+      <!-- 3. 引入zepto的JS ajax dom操作的Js库 -->
+      <script src="lib/zepto/zepto.min.js"></script>   
+      <!-- 4. 引入分类的JS文件 -->
+      <script src="js/category.js"></script>
+</body>
+</html>
+
+    

@@ -1,0 +1,48 @@
+@import 'base.less';
+
+#main{
+   
+    // 折叠框的标题样式
+    .mui-navigate-right {
+        background-color: #f1f1f1;
+    }
+    // 折叠框内容的样式
+    .mui-collapse-content{
+         padding: 0;
+        .product {
+            text-align: center;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0;
+            li {
+              border-bottom:1px solid #cccccc;
+              border-right:1px solid #cccccc;
+              width: 33.33%;
+                a {
+                    display: block;
+                    height: .5rem;
+                    line-height: .5rem;
+                    width: 100%;
+                    cursor: pointer;
+                    font-size: .16rem;
+                }
+            }
+        }
+    }
+    // 品牌排行样式
+    .Brand-ranking {
+        background-color: #ff4e49;
+       height: 0.4rem;
+      
+       a {
+        line-height: 0.4rem;
+        color:#fff;
+        margin-left: 0.2rem;
+       }
+    }
+
+}
+    
+ 
