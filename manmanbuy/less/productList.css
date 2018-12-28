@@ -1,0 +1,120 @@
+@import "basee.css";
+.su_nav {
+  width: 100%;
+  margin-top: 50px;
+  height: 40px;
+  padding: 0 20px;
+  background: linear-gradient(to bottom, #fff, #ddd);
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 -1px 3px #ddd;
+  position: fixed;
+  top: 0px;
+}
+.su_nav a:last-child {
+  height: 30px;
+  padding: 0 10px;
+  line-height: 30px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background: linear-gradient(to top, #fff, #ddd);
+  display: inline-block;
+  float: right;
+  box-shadow: 0px 0px 1px #AAAAAA, 0px 1px 1px #AAAAAA;
+}
+.su_container {
+  width: 100%;
+  margin-top: 90px;
+}
+.su_container ul {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+.su_container ul li {
+  width: 100%;
+  padding: 10px;
+}
+.su_container ul li a {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.su_container ul li a .su_pic {
+  width: 100px;
+  height: 100px;
+  float: left;
+  overflow: hidden;
+}
+.su_container ul li a img {
+  width: 100%;
+}
+.su_container ul li a .su_shop_content {
+  overflow: hidden;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.su_container ul li a .su_shop_content p {
+  height: 38px;
+}
+.su_container ul li a .su_shop_content p:last-of-type {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: simsun;
+  line-height: 45px;
+  color: #ea3900;
+}
+.su_container ul li a .su_shop_content span {
+  margin-top: 12px;
+  float: right;
+}
+.su_container ul li a .su_shop_content span img {
+  height: 18px;
+  width: 18px;
+  float: right;
+}
+.su_container ul li a .su_shop_content .other {
+  padding-left: 10px;
+}
+.su_container ul li a .su_shop_content .other span {
+  margin-right: 10px;
+  font-size: 12px;
+  color: #a1a1a1;
+}
+.page {
+  height: 30px;
+  text-align: center;
+  position: relative;
+}
+.page div {
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 10px;
+}
+.page .pages {
+  position: fixed;
+}
+.list-title > .list-title-content {
+  height: 35px;
+  background-color: #ff4e49;
+  /* background: -webkit-gradient(linear,0 0,0 100%,from(#ffaf47),to(#ff9000)); */
+  border-bottom: 1px solid #ffc881;
+  line-height: 35px;
+  overflow: hidden;
+  color: #fff;
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  clear: both;
+}
+.list-title > .list-title-content span {
+  font-weight: 400;
+  font-size: 16px;
+}
+.list-title > .list-title-content p {
+  float: right;
+  margin-right: 10px;
+  color: #fff;
+  margin-top: 10px;
+}

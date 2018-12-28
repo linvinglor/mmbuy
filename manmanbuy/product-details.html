@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>国内折扣</title>
+    <!-- 引入mui的css文件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- 引入字体图标fontawsome字体图标库的CSS文件 -->
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入主页的less文件 注意 stylesheet/less-->
+    <link rel="stylesheet/less" href="less/product-details.less">
+    <!-- 引入less.js的编译器文件 编译less代码 要编译index.less 依赖index.less  影响页面渲染优先执行 -->
+    <script src="./lib/less/less.js"></script>
+    <!-- 引入rem.js屏幕适配的JS代码 -->
+    <script src="js/rem.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <h4>国内折扣</h4>
+        <a href="inlanddiscount.html" class="left fa fa-arrow-left"></a>
+        <a href="#" class="right">
+            <img src="images/header_app.png" alt="手机app下载">
+        </a>
+        
+    </header>
+
+    <!-- 主体 -->
+    <main id="main">
+        <div class="mainde">
+            <h3 class="title"> 西域美农新疆特产五星和田红枣250g*2 </h3>
+            <h4>19.8元(5件99元)</h4>
+            <div class="info">
+                <span>京东商城</span>
+                <span>10-22 13:28</span>
+                <span>chenjin / 慢慢卖</span>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <p>原价25.9一斤，凑满5件只要99元价格。 枣子紧实，入口甜爽。适合公司人多的买吧，价格还是不错的。</p>
+                </div>
+                <div class="right">
+                    <img src="./images/j_sources_img_2016_10_24_190_190_0_36618798b6e1a98d9f4ae8f7a195f41b.jpg" alt="">
+                </div>
+            </div>
+            <div class="datu">
+                <img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="">
+            </div>
+            <div class="golink">
+                <a href="#">
+                    前往购买
+                </a>
+            </div>
+            <div class="erwei">
+                <img src="./images/mmbweixin2.png" alt="">
+            </div>
+            
+            <div class="pinlun"></div>
+        </div>
+        
+    
+
+        <!-- 底部 -->
+        <div id="ctl00_foot">
+            <div class="foot_top">
+                <a href="##">登录</a>
+                <a href="##">注册</a>
+                <a href="##" style="width: 40%; border: 0;" id="rtt">
+                    <img src="images/top.png" width="16" height="16">返回顶部</a>
+            </div>
+            <div class="footer">
+                <p>
+                    <a href="#" style="color: #ff4e49">手机APP下载</a>
+                    <a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版 -- 掌上比价平台</a>
+                </p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </div>
+    
+    </main>
+
+    <!-- 商品列表模板 -->
+    <script id="product-details" type="text/html">
+        {{each result value}}
+        <h3 class="title">{{value.productName}}</h3>
+        <h4>{{value.productPrice}}</h4>
+        <div class="info">
+            <span>{{value.productFrom}}</span>
+            <span>{{value.productTime}}</span>
+            <span>{{value.productTips}}</span>
+        </div>
+        <div class="content">
+            
+            
+            
+            <div class="right">
+                <!-- <img src="./images/j_sources_img_2016_10_24_190_190_0_36618798b6e1a98d9f4ae8f7a195f41b.jpg" alt=""> -->
+                {{@value.productImg}}
+            </div>
+            <div class="left"><p>{{value.productInfo}}</p></div>
+           
+        </div>
+        <div class="datu">
+            {{@value.productImg}}
+        </div>
+        <div class="golink">
+            <a href="#">
+                前往购买
+            </a>
+        </div>
+        <div class="erwei">
+            <img src="./images/mmbweixin2.png" alt="">
+        </div>
+        
+        <div class="pinlun">
+            {{@value.productComment}}
+        </div>
+        {{/each}}
+    </script>
+    
+    <!-- 引入zepto的JS 发送请求之类的 和 获取元素 添加事件之类 -->
+    <script src="lib/zepto/zepto.min.js"></script>
+    <!-- 引入MUI的js -->
+    <script src="lib/mui/js/mui.js"></script>
+    <!-- 引入模板引擎 artTemplate template-web.js最新4.0简洁版本-->
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/product-details.js"></script>
+</body>
+</html>

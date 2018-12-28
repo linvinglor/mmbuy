@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="less/base.css">
+    <!-- <link rel="stylesheet" href="lib/mui/css/mui.css"> -->
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="less/save-vale.less">
+    <script src="lib/less/less.js"></script>
+    <script src="js/rem.js"></script>
+
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="back">
+            <a href="#">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </a>
+        </div>
+        <h3>国内折扣</h3>
+        <div class="appdown">
+            <a href="##"><img src="images/header_app.png" alt="手机app下载"></a>
+        </div>
+    </header>
+    <main id="main">
+        <div class="title">
+            <h3>移动端：森蜂园 蜂蜜 黑蜂椴树雪蜜蜂蜜1680g(420g*4瓶)</h3>
+            <span class="from">
+                <span>京东商城 </span>
+                <span>10-25 13:40</span>
+                <span>小编烟火/慢慢买</span>
+            </span>
+        </div>
+        <div class="content">
+            <div class="describe-one">
+                <div class="first-describe">
+                    <span> 椴树蜜是由"东北黑蜂"采集椴树花蜜经充分酿造而成。椴树蜜有晶莹剔透、甜润香醇、回味绵长等特，“东北黑蜂”具有强壮有力、采集力强、抗病能力优秀、耐低温等特点。 </span>
+                </div>
+                <div class="img-sm">
+                    <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/2016100013444363612.jpg" alt="">
+                </div>
+            </div>
+            <div class="describe-two">
+                <div class="second-describe">
+                    <span> 目前京东商城移动端售价99元，可参加满199-100元活动，满减后约50元左右，限华北华东地区有货。 </span>
+                </div>
+                <div class="img-lg">
+                    <img src="http://img13.360buyimg.com/n1/g13/M00/04/03/rBEhVFNF7aQIAAAAAAHnGxaLvEwAALhHADgjMIAAecz653.jpg" alt="">
+                </div>
+                <button>前往购买</button>
+            </div>
+        </div>
+        <div class="talk">
+                <p>发表评论</p>
+            <div class="publish">
+                
+                <textarea cols="30" rows="3"></textarea>
+                <div class="btn">
+                    <button>发表评论</button>
+                </div>
+            </div>
+        </div>
+        <div class="new-discuss">
+            <p class="title">最新评论</p>
+            <ul>
+                <li>
+                    <div class="left">
+                        <img src="http://bbs.manmanbuy.com/images/face/none.gif" alt="">
+                    </div>
+                    <div class="right">
+                        <p>
+                            <span class="qq-num">qq_4007987W</span>
+                            <span class="time">2016/10/25 14:24:44</span>
+                        </p>
+                        <span class="content-discuss">椴树蜜结晶的时候有白色的和黄色的，气温特别低的话就类似于猪油状，比奶油硬一些。结晶融化就是浅黄色的了。我买过白色的，和朋友们去烧烤，考蜂蜜面包，瓶子在太阳底下晒化了就是浅黄色的。还有淡淡的花香味。哈哈</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+
+    <footer id="ctl00_foot">
+        <div class="foot_top">
+            <a href="##">登录</a>
+            <a href="##">注册</a>
+            <a href="##" style="width: 40%; border: 0;" id="rtt">返回顶部</a>
+        </div>
+        <div class="footer">
+            <p>
+                <a href="##" style="color: #ff4e49">手机APP下载</a>
+                <a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版 -- 掌上比价平台</a>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+    <!-- 创建商品列表模板 -->
+    <script id="productListTpl" type="text/html">
+        
+        
+                {{each result value}}
+                <div class="title">
+                    <h3>{{value.productName}}</h3>
+                    <span class="from">
+                        <span>{{value.productFrom}} </span>
+                        <span>{{value.productTime}} </span>
+                        <span>{{value.productTips}} </span>
+                    </span>
+                </div>
+                <div class="content">
+                    <div class="describe-one">
+                        <div class="first-describe">
+                            <span> {{value.productInfo}} </span>
+                        </div>
+                        <div class="img-sm">
+                            {{@value.productImgSm}}
+                        </div>
+                    </div>
+                    <div class="describe-two">
+                        <div class="second-describe">
+                            <span> {{value.productInfo1}} </span>
+                        </div>
+                        <div class="img-lg">
+                            {{@value.productImgLg}}
+                        </div>
+                        <button>前往购买</button>
+                    </div>
+                </div>
+                <div class="talk">
+                        {{@value.productComment}}
+                        
+                </div>
+                
+            
+            {{/each}}
+    </script>
+    <!-- 引入zepto的js 发送请求和获取元素添加事件 -->
+    <script src="lib/zepto/zepto.min.js"></script>
+    <!-- 引入mui的js -->
+    <script src="lib/mui/js/mui.js"></script>
+    <!-- 引入模板引擎 -->
+    <script src="lib/artTemplate/template-web.js"></script>
+    <!-- 引入自己写的js -->
+    <script src="js/save-sale.js"></script>
+</body>
+
+</html>

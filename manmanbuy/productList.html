@@ -3,56 +3,168 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>商城导航</title>
-    <link href="lib/mui/css/mui.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <title>比价搜索二级页面</title>
+    <!-- <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.css"> -->
+    <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
     <link rel="stylesheet/less" href="less/productList.less">
     <script src="lib/less/less.js"></script>
-    <script src="js/rem.js"></script>
+    <script type="text/template" id="categoryTitle"> 
+        <% for(var i = 0; i< result.length; i++){ %>
+        <div  data-title-id="<%= result[i].titleId %>">
+            <a href="index.html">首页 &gt;</a>
+            <a href="category.html">全部分类 &gt;</a>
+            <a href="category.html"><%= result[i].category %></a>
+            <a href="">筛选</a>
+        </div> 
+        <%}%> 
+    </script>
+    <script type="text/template" id="categoryPro">
+        <% for(var i = 0; i< result.length; i++){ %> 
+            <ul class="infor">
+                <li>
+                    <a href="productDetails.html?categoryid=<%=result[i].categoryId%>&productId=<%=result[i].productId%>">
+                        <div class="su_pic"> <%=# result[i].productImg %></div>
+                        <div class="su_shop_content">
+                            <p><%= result[i].productName %></p>
+                            <p>
+                                <%= result[i].productPrice %>
+                                <span>
+                                    <img src="images/star.svg" alt=""/>
+                                    <img src="images/star.svg" alt=""/>
+                                    <img src="images/star.svg" alt=""/>
+                                    <img src="images/star.svg" alt=""/>
+                                    <img src="images/star.svg" alt=""/>
+                                </span>
+                            </p>
+
+                        <div class="other">
+                            <span><%= result[i].productQuote %></span>
+                            <span><%= result[i].productCom %></span>
+                        </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        <%}%> 
+    </script>
+<script type="text/template" id="totalCount">
+    <div class="pages" totalCount="<%= result.totalCount%>"></div>
+</script>
 </head>
 
 <body>
-    <!-- 1人负责品牌大全列表+商城导航 -->
-    <!-- 头部 -->
+    <!-- 头部区域 -->
     <header id="header" class="header">
-        <div class="backTitle">
-            <a href="javascrpt:history.back();">＜</a>
-        </div>
-        <h3>商城导航</h3>
-        <div class="appdown">
-            <a href="##"><img src="images/header_app.png" alt="手机app下载"></a>
-        </div>
+        <div class="logo"><a href="index.html" title="慢慢买"><img src="images/header_logo.png" alt=""></a></div>
+        <div class="appdown"><a href="##"><img src="images/header_app.png" alt="手机app下载"></a></div>
     </header>
-    <main id="main">
-        <ul class="prodList">
-            <li class="firstLi"></li>
-            <li><a href=""><img src="" alt=""></a></li>
-        </ul>
-    </main>
-    <footer id="footer">
-        <div class="footTop">
-            <a href="#">注册</a>
-            <a href="#">登录</a>
-            <a href="#">
-                <!-- <img src="./images/" alt=""> -->
-                返回顶部</a>
+
+
+    <!-- 主体区域 -->
+    <div class="su_nav">
+        <div data-title-id="0">
+            <a href="index.html">首页 &gt;</a>
+            <a href="category.html">全部分类 &gt;</a>
+            <a href="category.html">电视</a>
+            <a href="">筛选</a>
         </div>
-        <div class="footBot">
+    </div>
+    <div class="su_container">
+        <ul class="infor">
+            <li>
+                <a href="productDetails.html?categoryid=0&amp;productId=0">
+                    <div class="su_pic"> <img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015515937123.png"
+                            alt="乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视" width="100" height="100"> </div>
+                    <div class="su_shop_content">
+                        <p>乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</p>
+                        <p>￥1999.00 <span>
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                            </span>
+                        </p>
+
+                        <div class="other">
+                            <span>报价(6)</span>
+                            <span>评论(2286)</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <ul class="infor">
+            <li>
+                <a href="productDetails.html?categoryid=0&amp;productId=0">
+                    <div class="su_pic"> <img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015515937123.png"
+                            alt="乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视" width="100" height="100"> </div>
+                    <div class="su_shop_content">
+                        <p>乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</p>
+                        <p>￥1999.00 <span>
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                                <img src="images/star.svg" alt="">
+                            </span>
+                        </p>
+
+                        <div class="other">
+                            <span>报价(6)</span>
+                            <span>评论(2286)</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="page">
+        <div class="buttonBefore">
+            <a href="#">
+                上一页
+            </a>
+        </div>
+        <div class="buttonafter">
+            <a href="#">
+                下一页
+            </a>
+        </div>
+    </div>
+    <section id="recommen" class="list-title">
+        <div class="list-title-content">
+            <span>品牌排行</span>
+            <p width="20" height="20" class="fa fa-chevron-circle-right"></p>
+        </div>
+    </section>
+    <footer id="ctl00_foot">
+        <div class="foot_top">
+            <a href="login.html">登录</a>
+            <a href="register.html">注册</a>
+            <a href="##" style="width: 40%; border: 0;" id="rtt">
+                <img src="images/top.png" width="16" height="16"> 返回顶部
+            </a>
+        </div>
+        <div class="footer">
             <p>
-                <a href="index.html" style="color: #ff4e49">手机APP下载</a>
-                <a href="#" style="color:#bebebe">慢慢买手机版 -- 掌上比价平台</a>
+                <a href="##" style="color: #ff4e49">
+                    手机APP下载
+                </a>
+                <a href="index.htm" tppabs="##" style="color:#bebebe;">
+                    慢慢买手机版 -- 掌上比价平台
+                </a>
             </p>
-            <p>m.manmanbuy.com</p>
+            <p>
+                m.manmanbuy.com
+            </p>
         </div>
     </footer>
-    <script id="navList" type="text/html">
-        {{each result value}}
-            <li><a href="{{value.navHref}}"><img src="{{value.navImg}}" alt=""><span>{{value.navTitle}}</span></a>
-            </li>
-    {{/each}}
-</script>
+
+
+
+
     <script src="lib/mui/js/mui.js"></script>
     <script src="lib/zepto/zepto.min.js"></script>
     <script src="lib/artTemplate/template-web.js"></script>

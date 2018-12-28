@@ -10,7 +10,7 @@ html,body {
 }
 body{
     font-family: "Microsoft YaHei",sans-serif;
-    font-size: 0.14rem;
+    font-size: 14px;
     color: #333;
 	background: #fff;
 	overflow-x: hidden;
@@ -33,7 +33,7 @@ button,form,img,input,select {
 }
 .clearfix {
 	zoom: 1
-;}
+}
 textarea {
 	width: 95%
 }
@@ -84,30 +84,30 @@ input{
 	position: fixed;
 	width: 100%;
 	top: 0;
-	height: 0.5rem;
+	height: 50px;
 	background: #ff4e49;
 	border-bottom: 1px solid #e6e6e6;
 	z-index: 999;
 }
 
 #header>.logo {
-	padding: 0.12rem;
+	padding: 12px;
 }
 
 #header>.logo>a>img {
-	max-height: 0.25rem;
+	max-height: 25px;
 	overflow: hidden;
 }
 
 #header>.appdown {
 	position: absolute;
 	right: 0;
-	top: -0.02rem;
-	padding: 0.07rem;
+	top: -2px;
+	padding: 7px;
 }
 
 #header>.appdown>a>img {
-	max-height: 0.34rem;
+	max-height: 34px;
 	overflow: hidden;
 }
 
@@ -115,45 +115,41 @@ input{
 #form-search {
 	width: 100%;
 	position: fixed;
-	top: 0.5rem;
-	padding: 0.1rem;
+	top: 50px;
+	padding: 10px;
 	background-color: #fff;
 	z-index: 999;
 }
 
 #form-search>.search {
 	position: relative;
-	padding-right: 0.7rem;
+	padding-right: 70px;
 }
 
 #form-search>.search>input[type=search] {
 	width: 100%;
 	background: #f1f1f1;
-	font-size: 0.13rem;
-	padding-right: 0.5rem;
-	padding-left: 0.2rem;
+	font-size: 13px;
+	padding-right: 50px;
+	padding-left: 20px;
 }
-#main {
-	 height: 100%;
-    position: relative;
-    overflow: hidden;
-}
+
 #form-search>.search>input[type=button],#form-search>.search>input[type=search] {
 	-webkit-appearance: none;
 	border: none;
-	height: 0.3rem;
-/*	line-height: 0.3rem;*/
+	height: 30px;
+	line-height: 30px;
 	border-radius: 15px;
 }
 
 #form-search>.search>input[type=button] {
 	position: absolute;
-	width: 0.63rem;
+	width: 63px;
 	background: #565656;
 	color: #fff;
 	top: 0;
 	right: 0;
-	font-size: 0.16rem;
+	font-size: 16px;
 }
 
 /* 底部 */
@@ -161,16 +157,16 @@ input{
 	text-align: center
 }
 .footer {
-	font-size: 0.12rem;
-	padding: 0.15rem 0;
+	font-size: 12px;
+	padding: 15px 0;
 	color: #666;
 }
-.foot_top,.footer {background: #232a34;}
+.foot_top,.footer {background: #232a34}
 .foot_top {
 	border-bottom: 1px solid #727272;
-	height: 0.34rem;
-	line-height: 0.34rem;
-	margin-top: 0.25rem;
+	height: 34px;
+	line-height: 34px;
+	margin-top: 25px;
 	clear: both;
 	text-align: center;
 }
@@ -178,7 +174,7 @@ input{
 	-o-box-sizing: border-box;
 	box-sizing: border-box;
 	float: left;
-	font-size: 0.14rem;
+	font-size: 14px;
 	border-right: 1px solid #727272;
 	text-align: center;
 	width: 30%;
@@ -191,46 +187,53 @@ input{
 
 .foot_top a img {
 	vertical-align: middle;
-	margin-top: -0.03rem;
-	margin-right: 0.05rem;
+	margin-top: -3px;
+	margin-right: 5px;
+}
+
+#ctl00_foot .footer p {
+    font-size: 0.14rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #8f8f94;
 }
 
 /* 首页超值折扣推荐 */
 
 .pic {
 	float: left;
-	width: 1.1rem;
+	width: 110px;
 }
 .pic>img {
-	width: 1rem;
-	height: 1rem;
+	width: 100px;
+	height: 100px;
 }
 .product-list {
 	background-color: #fff;
 }
 .product-list>ul>li {
 	border-bottom: 1px solid #e7e7e7;
-	padding: 0.1rem;
+	padding: 10px;
 }
 .product-list>ul>li>a {display: block}
 
 .product-list>ul>li>a>.info {
-	font-size: 0.14rem;
-	line-height: 0.24rem;
-	padding-left: 0.9rem;
+	font-size: 14px;
+	line-height: 24px;
+	padding-left: 90px;
 }
 .product-list>ul>li>a>.info>.tit {
 	color: #333;
-	line-height: 0.22rem;
-	min-height: 0.44rem;
+	line-height: 22px;
+	min-height: 44px;
 	word-break: break-all;
 }
 .product-list>ul>li>a>.info>.title {
 	color: #333;
 	word-break: break-all;
-	font-size: 0.15rem;
-	line-height: 0.19rem;
-	min-height: 0.57rem;
+	font-size: 15px;
+	line-height: 19px;
+	min-height: 57px;
 	text-align: left;
 	font-weight: 400;
 }
@@ -239,47 +242,47 @@ input{
 	display: inline
 }
 .product-list>ul>li>a>.info>.price {
-	height: 0.25rem;
-	margin-top: 0.04rem;
+	height: 25px;
+	margin-top: 4px;
 }
 .product-list>ul>li>a>.info>.price>em {
-	font-size: 0.18rem;
+	font-size: 18px;
 	color: #ea3900;
 	vertical-align: middle;
 	float: left;
 }
 .product-list>ul>li>a>.info>.other {
 	color: #a1a1a1;
-	font-size: 0.12rem;
+	font-size: 12px;
 }
 .product-list>ul>li>a>.info>.other>.mall {
 	color: #a1a1a1;
-	font-size: 0.12rem;
+	font-size: 12px;
 	float: left;
 }
 .product-list>ul>li>a>.info>.other>.comment {
 	color: #a1a1a1;
-	font-size: 0.12rem;
+	font-size: 12px;
 	float: right;
 }
 .product-list>ul>li>a>.info>.other>em {
 	font-style: normal;
-	margin-right: 0.1rem;
+	margin-right: 10px;
 }
 .product-list-title {
-	height: 0.38rem;
+	height: 38px;
 	background-color: #ebebeb;
 	background: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#ebebeb));
 	border-top: 1px solid #ebebeb;
 	border-bottom: 1px solid #ccc;
-	line-height: 0.36rem;
-	padding-left: 0.08rem;
-	font-size: 0.14rem;
+	line-height: 36px;
+	padding-left: 8px;
+	font-size: 14px;
 }
 
  /* 环形菜单 */
 a{
-	background-size: 0.3rem 0.3rem;
+	background-size: 30px 30px;
 }
 .ring>a:nth-child(1){background-image: url("../images/ic_search.png");}
 .ring>a:nth-child(2){background-image: url("../images/ic_cu.png");}
@@ -291,16 +294,16 @@ a{
 .ring>a:nth-child(8){background-image: url("../images/home.png");}
 .circle {
 	position: fixed;
-	height:0.3rem;
-	width:0.3rem;
-	top: 0.45rem;
+	height:30px;
+	width:30px;
+	top: 45px;
 	left: 0px;
 	z-index:999;
 }
 .ring{
 	position: absolute;
-	left: 0.15rem;
-	top: 0.15rem;
+	left: 15px;
+	top: 15px;
 	width: 0;
 	height: 0;
 	background-color:rgba(0,0,0,0.5);
@@ -314,11 +317,11 @@ a{
 	transition:all 0.5s ease-out;
 }
 .open.ring{
-	left: -0.45rem;
-	top: -0.45rem;
+	left: -45px;
+	top: -45px;
 	opacity:1;
-	width: 1.2rem;
-	height: 1.2rem;
+	width: 120px;
+	height: 120px;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-ms-transition: all 0.5s;
@@ -330,8 +333,8 @@ a{
 }
 .center{
 	display: block;
-	width: 0.3rem;
-	height: 0.3rem;
+	width: 30px;
+	height: 30px;
 	border-radius:50%;
 	border:2px solid #b3b3b3;
 	background-color:rgba(0,0,0,0.5);
@@ -344,13 +347,13 @@ a{
 	border-radius:50%;
 	color:#eeeeee;
 	display:block;
-	height:0.3rem;
-	line-height:0.3rem;
-	margin-left:-0.15rem;
-	margin-top:-0.15rem;
+	height:30px;
+	line-height:30px;
+	margin-left:-15px;
+	margin-top:-15px;
 	position:absolute;
 	text-align:center;
-	width:0.3rem;
+	width:30px;
 }
 .mask {
 	top: 0;

@@ -1,116 +1,132 @@
-@import 'base.less';
-body{
-    padding: 0.5rem 0;
-}
+@import "basee.css";
 
-#header {
-    position: fixed;
+// 主体区域样式
+.su_nav {
     width: 100%;
-    top: 0;
-    height: 0.5rem;
-    border-bottom: 1px solid #e6e6e6;
-    z-index: 999;
-    color: #fff;
-    background-color: orangered;
-    .backTitle {
-        font-size: 0.3rem;
-        line-height: 0.5rem;
-        color: #fff;
+    margin-top: 50px;
+    height: 40px;
+    padding: 0 20px;
+    background: linear-gradient(to bottom, #fff, #ddd);
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 -1px 3px #ddd;
+    position: fixed;
+    top: 0px;
+
+    a:last-child {
+        height: 30px;
+        padding: 0 10px;
+        line-height: 30px;
+        margin-top: 5px;
+        border-radius: 5px;
+        background: linear-gradient(to top, #fff, #ddd);
+        display: inline-block;
+        float: right;
+        box-shadow: 0px 0px 1px #AAAAAA, 0px 1px 1px #AAAAAA;
     }
-    h3 {
-        position: absolute;
-        font-size: 0.20rem;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 0; // font-weight: normal;
-    }
-    .appdown {
-        position: absolute;
-        right: 0;
-        top: -0.02rem;
-        padding: 0.1rem; //此处有修改
-        a {
-            img {
-                max-height: 0.34rem;
-                overflow: hidden;
-            }
-        }
-    }
+
 }
 
-#main {
-    position: relative;
-    height: 100%;
-    z-index: 998;
+// 商品列表区
+.su_container {
+    width: 100%;
+    margin-top: 90px;
     ul {
-        padding: 0.1rem;
-        display: flex;
-        flex-wrap: wrap;
-        >li {
-            display: flex;
-            height: 0.5rem;
-            margin: 0.03rem 0.03rem;
-            border-left: 0.01rem solid #727272;
-            border-right: 0.01rem solid #727272;
-            border-top: 0.01rem solid #727272;
-            border-bottom: 0.01rem solid #727272;
-            background-color: #ccc;
-            a {
-                display: block;
-                span {
-                    font-size: 0.23rem;
-                    line-height: 0.5rem;
-                    text-align: center;
-                    padding-right: 0.03rem;
-                }
-                >img {
-                    width: 0.35rem;
-                    padding: 0.05rem 0.05rem;
-                    text-align: center;
-                    margin-bottom: 0.1rem;
-                }
+      width: 100%;
+      background: #fff;
+      overflow: hidden;
+      border-bottom: 1px solid #ccc;
+      li {
+        width: 100%;
+        padding: 10px;
+        a {
+          display: block;
+          width: 100%;
+          overflow: hidden;
+          .su_pic {
+            width: 100px;
+            height: 100px;
+            float: left;
+            overflow: hidden;
+          }
+          img{
+            width: 100%;
+          }
+          .su_shop_content {
+            overflow: hidden;
+            padding-left: 12px;
+            padding-right: 12px;
+            p {
+                height: 38px;
             }
+            p:last-of-type {
+              font-size: 20px;
+              font-weight: 700;
+              font-family: simsun;
+              line-height: 45px;
+              color: #ea3900;
+            }
+            span {
+              margin-top: 12px;
+              float: right;
+              img {
+                height: 18px;
+                width: 18px;
+                float: right;
+              }
+            }
+            .other {
+              padding-left: 10px;
+              span {
+                margin-right: 10px;
+                font-size: 12px;
+                color: #a1a1a1;
+              }
+            }
+          }
         }
+      }
     }
-}
+  }  
 
-#footer {
-    position: fixed;
-    width: 100%;
-    // height: 0.98rem;
-    background-color: #232a34;
-    bottom: 0;
-    left: 0;
+  .page {
+    height: 30px;
     text-align: center;
-    z-index: 998;
-}
+    position: relative;
+    div {
+      display: inline-block;
+      line-height: 30px;
+      padding: 0 10px;
+    }
+    .pages {
+      position: fixed;
+    }
+  }
 
-#footer .footTop {
-    height: 0.34rem;
-    line-height: 0.34rem;
-    clear: both;
-    border-bottom: 0.01rem solid #727272;
-}
-
-#footer .footTop a {
-    border-right: 0.01rem solid #727272;
-    box-sizing: border-box;
-    float: left;
-    font-size: 0.14rem;
-    width: 30%;
+  // 品牌区域样式
+  .list-title>.list-title-content {
+    height: 35px;
+    background-color: #ff4e49;
+    /* background: -webkit-gradient(linear,0 0,0 100%,from(#ffaf47),to(#ff9000)); */
+    border-bottom: 1px solid #ffc881;
+    line-height: 35px;
+    overflow: hidden;
     color: #fff;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    clear: both;
+    span {
+      font-weight: 400;
+      font-size: 16px;
+  }
+  p {
+    float: right;
+    margin-right: 10px;
+    color: #fff;
+    margin-top: 10px;
+}
 }
 
-#footer .footTop a:nth-child(3) {
-    border-right: none;
-}
 
-#footer .footBot {
-    padding: 0.15rem 0;
-    font-size: 0.12rem;
-}
 
-#footer .footBot p {
-    margin: 0;
-}

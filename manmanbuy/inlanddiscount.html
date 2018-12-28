@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>国内折扣</title>
+    <!-- 引入mui的css文件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- 引入字体图标fontawsome字体图标库的CSS文件 -->
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入主页的less文件 注意 stylesheet/less-->
+    <link rel="stylesheet/less" href="less/gn-discount.less">
+    <!-- 引入less.js的编译器文件 编译less代码 要编译index.less 依赖index.less  影响页面渲染优先执行 -->
+    <script src="./lib/less/less.js"></script>
+    <!-- 引入rem.js屏幕适配的JS代码 -->
+    <script src="js/rem.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <h4>国内折扣</h4>
+        <a href="javascript:history.back()" class="left fa fa-arrow-left"></a>
+        <a href="#" class="right">
+            <img src="images/header_app.png" alt="手机app下载">
+        </a>
+        
+    </header>
+
+    <!-- 主体 -->
+    <main id="main">
+        <!-- 商品区域 -->
+        <!-- 添加一个区域滚动的父容器 -->
+        <div class="mui-scroll-wrapper">
+            <!-- 区域滚动的子容器 里面放真实要滚动的内容 轮播图 导航等 -->
+            <div class="mui-scroll">
+                <div class="content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="">
+                                <p class="top">西域美农新疆特产五星和田红枣250g*2</p>
+                                <p class="center">19.8元(5件99元)</p>
+                                <p class="bottom">京东商城 | 10-22 13:28</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="">
+                                <p class="top">西域美农新疆特产五星和田红枣250g*2</p>
+                                <p class="center">19.8元(5件99元)</p>
+                                <p class="bottom">京东商城 | 10-22 13:28</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="">
+                                <p class="top">西域美农新疆特产五星和田红枣250g*2</p>
+                                <p class="center">19.8元(5件99元)</p>
+                                <p class="bottom">京东商城 | 10-22 13:28</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="">
+                                <p class="top">西域美农新疆特产五星和田红枣250g*2</p>
+                                <p class="center">19.8元(5件99元)</p>
+                                <p class="bottom">京东商城 | 10-22 13:28</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="">
+                                <p class="top">西域美农新疆特产五星和田红枣250g*2</p>
+                                <p class="center">19.8元(5件99元)</p>
+                                <p class="bottom">京东商城 | 10-22 13:28</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://img10.360buyimg.com/n7/jfs/t1720/256/513904188/195330/ce31e971/55d2cf3eNc2d117d0.jpg" alt="">
+                                <p class="top">西域美农新疆特产五星和田红枣250g*2</p>
+                                <p class="center">19.8元(5件99元)</p>
+                                <p class="bottom">京东商城 | 10-22 13:28</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+    
+    
+                <!-- 底部 -->
+                <div id="ctl00_foot">
+                    <div class="foot_top">
+                        <a href="##">登录</a>
+                        <a href="##">注册</a>
+                        <a href="##" style="width: 40%; border: 0;" id="rtt">
+                            <img src="images/top.png" width="16" height="16">返回顶部</a>
+                    </div>
+                    <div class="footer">
+                        <p>
+                            <a href="#" style="color: #ff4e49">手机APP下载</a>
+                            <a href="index.htm" tppabs="##" style="color:#bebebe;">慢慢买手机版 -- 掌上比价平台</a>
+                        </p>
+                        <p>m.manmanbuy.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 商品列表模板 -->
+    <script id="productlist" type="text/html">
+        {{each result value}}
+        <li data-id="{{value.productId}}" class="libtn">
+            <a hrefp="#">
+                {{@value.productImg}}
+                <p class="top">{{value.productName}}</p>
+                <p class="centers">{{value.productPrice}}</p>
+                <p class="bottom">{{value.productFrom}} | {{value.productTime}}</p>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    
+    <!-- 引入zepto的JS 发送请求之类的 和 获取元素 添加事件之类 -->
+    <script src="lib/zepto/zepto.min.js"></script>
+    <!-- 引入MUI的js -->
+    <script src="lib/mui/js/mui.js"></script>
+    <!-- 引入模板引擎 artTemplate template-web.js最新4.0简洁版本-->
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/gn-discount.js"></script>
+</body>
+</html>

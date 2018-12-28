@@ -1,0 +1,51 @@
+@import "discounts.css";
+body {
+  background-color: darkgray;
+}
+.logo img {
+  width: 1.86rem;
+  height: 0.25rem;
+}
+.login {
+  width: 3.7rem;
+  height: 5rem;
+  background-color: #faf7f7;
+  padding: 0.3rem 0.2rem;
+  margin: 0.2rem 0.27rem;
+  color: #f57c94;
+}
+.login .userlogin {
+  widows: 1.6rem;
+  height: 2rem;
+  display: block;
+  text-align: center;
+}
+.login .userlogin .suo {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: darkgray;
+  margin: 0.15rem auto;
+  border: 1px solid rosybrown;
+  border-radius: 50%;
+}
+.login .userlogin .suo img {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0.35rem auto;
+}
+.login .userlogin h3 {
+  width: 100%;
+  height: 0.32rem;
+  margin: 0.2rem 0;
+}
+.login .userlogin form {
+  width: 100%;
+  height: auto;
+}
+.login .userlogin form input {
+  width: 100%;
+  display: block;
+  border-top: 0px;
+  border-left: 0px;
+}

@@ -1,0 +1,86 @@
+@import 'base.css';
+@import 'sitenav.css';
+body{
+    padding-top: 0.5rem;
+}
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 0.5rem;
+    border-bottom: 1px solid #e6e6e6;
+    z-index: 999;
+    color: #fff;
+    background-color: orangered;
+    .backTitle {
+        font-size: 0.3rem;
+        line-height: 0.5rem;
+        color: #fff;
+        a{
+            color: #fff;
+        }
+    }
+    h3 {
+        position: absolute;
+        font-size: 0.20rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0; // font-weight: normal;
+    }
+    .appdown {
+        position: absolute;
+        right: 0;
+        top: -0.02rem;
+        padding: 0.1rem; //此处有修改
+        a {
+            img {
+                max-height: 0.34rem;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+#main {
+    position: relative;
+    height: 100%;
+    z-index: 998;
+    ul {
+        padding: 0.1rem;
+        display: flex;
+        flex-wrap: wrap;
+        >li {
+            display: flex;
+            height: 0.5rem;
+            margin: 0.03rem 0.03rem;
+            border-left: 0.01rem solid #727272;
+            border-right: 0.01rem solid #727272;
+            border-top: 0.01rem solid #727272;
+            border-bottom: 0.01rem solid #727272;
+            background-color: #ccc;
+            a {
+                display: block;
+                span {
+                    font-size: 0.23rem;
+                    line-height: 0.5rem;
+                    text-align: center;
+                    padding-right: 0.03rem;
+                }
+                >img {
+                    width: 0.35rem;
+                    padding: 0.05rem 0.05rem;
+                    text-align: center;
+                    margin-bottom: 0.1rem;
+                }
+            }
+        }
+    }
+}
+#ctl00_foot{
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

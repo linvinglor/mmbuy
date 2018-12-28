@@ -139,7 +139,7 @@ $(function() {
 			areaid: areaid
 		},
 		success: function(data) {
-		
+//			console.log(data)
 			var html = template('producttpl', data);
 			$('#refreshContainer ul').html(html);
 		}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买-白菜价</title>
+    <!-- 引包,字体图标,mui 样式,base样式,自写的less样式,解析的js rem的js -->
+    <link rel="stylesheet" href="lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+    <!-- <link rel="stylesheet" href="less/base.css"> -->
+    <link rel="stylesheet/less" href="less/baicaijia.less">
+    <script src="js/rem.js"></script>
+    <script src="lib/less/less.js"></script>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="logo">
+            <a href="index.html" title="慢慢买"><img src="images/header_logo.png" alt=""></a>
+        </div>
+        <div class="appdown">
+            <a href="javascript:;"><img src="images/header_app.png" alt="手机app下载"></a>
+        </div>
+        <a href="javascript:;" class="search-icon"><span class="fa fa-search"></span></a>
+    </header>
+    <section id="form-search" class="hide">
+        <form action="" class="search mui-input-row mui-input-search">
+            <input type="search" class="mui-input-clear" placeholder="请输入搜索关键字">
+            <input type="button" class="" placeholder="" value="搜索">
+        </form>
+    </section>
+    <nav id="nav">
+        <div class="mui-scroll-wrapper mui-slider-indicatorcode mui-segmented-control mui-segmented-control-inverted">
+            <div class="mui-scroll">
+                <ul class="navbar">
+                    <li class="mui-control-item active"><a href="javascript:;">全部</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="main">
+
+        <div class="products">
+            <div class="mui-scroll-wrapper" id="refreshContainer">
+                <div class="mui-scroll" id="mui-scroll">
+                    <ul class="mui-table-view nav1">
+                        <li class="mui-table-view-cell mui-media">
+                            <a href="javascript:;">
+                                <img class="mui-pull-left" src="images/ic_mall.png">
+                                <div class="mui-media-body content">
+                                    <p class="title">[包邮]双十一红包限量抢</p>
+                                    <p class='price'><span>¥0.00</span><del>¥3.00</del></p>
+                                    <p class='progress'><span class="percent"><i class="inner">1%</i></span><span class="get">已领取82张</span></p>
+                                    <p class="coupons">
+                                        <span class="get-coupons">点此领15元优惠券</span>
+                                        <span class="order-link">下单链接</span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <!--回到顶部按钮 -->
+    <section id="backTop">
+        <a href="javascript:;" class="fa fa-arrow-circle-o-up">
+            <!-- <i class="fa fa-arrow-circle-up"></i> -->
+            <!-- <i class="fa fa-arrow-circle-o-up"></i> -->
+        </a>
+    </section>
+
+
+    <script type="text/html" id="navListTpl">
+        {{each result value index}}
+        <li class="mui-control-item {{index==0?'active':''}}"><a href="javascript:;" data-id="{{value._id}}" data-titleid="{{value.titleId}}">{{value.title}}</a></li>
+        {{/each}}
+
+    </script>
+
+    <script type="text/html" id="productListTpl">
+        {{each result value}}
+        <li class="">
+            <a href="javascript:;">
+                {{@value.productImg}}
+                <div class="content">
+                    <p class="title">{{@value.productName}}</p>
+                    <p class='price'>{{@value.productPrice}}</p>
+                    {{@value.productCouponRemain}}
+                    <p class="coupons">
+                        <span class="get-coupons">{{@value.productCoupon}}</span>
+                        <span class="order-link">{{@value.productHref}}</span>
+                    </p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    
+    </script>
+    <!-- js文件 MUI zepto 模板引擎 自写的js -->
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/baicijia.js"></script>
+
+</body>
+
+
+
+</html>

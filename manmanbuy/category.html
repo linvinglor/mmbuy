@@ -33,8 +33,10 @@
 
     <!-- 导航区域 -->
     <main id="main">
-          
-        <!-- 折叠区域 -->
+        <!-- 页面滚动盒子(等公共样式改了再用) -->
+             <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll"> 
+        <!-- 折叠区域(用 mui的结构) -->
         <ul class="mui-table-view">
             <li class="mui-table-view-cell mui-collapse">
                 <a class="mui-navigate-right" href="#">大家电</a>
@@ -65,9 +67,7 @@
             <a>品牌排行</a>
             <a></a>
         </section>
-   
-    </main>
-    <!-- 底部区域 -->
+        <!-- 底部区域 -->
     <footer id="ctl00_foot">
         <div class="foot_top">
             <a href="##">登录</a>
@@ -82,19 +82,25 @@
             <p>m.manmanbuy.com</p>
         </div>
     </footer>
+   </div>
+</div> 
+    </main>
+    
 
     <!--页面渲染区域 -->
-    <!-- 一级列表渲染 -->
+    <!------------------------------------------- 一级列表渲染 -->
+    <!-- id="firstCategoryTpl"用于JS里一级分类的数据注入 -->
     <script id="firstCategoryTpl" type="text/html">
+        <!-- 遍历所有数据 -->
         {{each result value}}
-      
+                <!--增加类名categoryFirst,用作JS里二级分类事件委托的时候用.携带自身的分类标题Id -->
                 <li class="mui-table-view-cell mui-collapse categoryFirst" data-id="{{value.titleId}}">
                         <a class="mui-navigate-right" href="#">
+                            <!-- 自身分类的标题名称 -->
                             {{value.title}}
                         </a>
                         <div class="mui-collapse-content"></div>
-                    </li>
-           
+                    </li> 
         {{/each}}
     </script>
     
@@ -104,7 +110,9 @@
         {{each result value}}
    
         <li>
+            <!-- 连接商品详情页,带自己的分类id,分类标题id -->
             <a href="productList.html?categoryid={{value.titleId}}">
+                <!-- 分类名称 -->
                 {{value.category}}
             </a>
         </li>

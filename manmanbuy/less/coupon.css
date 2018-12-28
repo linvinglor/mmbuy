@@ -1,0 +1,37 @@
+@import "discounts.css";
+#main .banner {
+  width: 100%;
+}
+#main .banner ul {
+  padding-left: 0;
+  display: flex;
+  height: 2.1rem;
+  flex-wrap: wrap;
+}
+#main .banner ul li {
+  border: 1px solid black;
+  list-style: none;
+  margin-right: 0.08rem;
+  margin-top: 0.05rem;
+  width: 47.5%;
+  height: 1.03rem;
+}
+#main .banner ul li a {
+  text-align: center;
+  display: block;
+  width: 2.03rem;
+  height: 1.03rem;
+}
+#main .banner ul li a img {
+  margin-top: 0.2rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  line-height: 1.03rem;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+#main .banner ul li a p {
+  display: block;
+  line-height: 0.2rem;
+  text-align: center;
+}

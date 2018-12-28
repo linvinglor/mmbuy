@@ -1,0 +1,214 @@
+h1 {
+  font-weight: 400;
+}
+a {
+  color: #ff5a0d 0%;
+  outline: 0;
+}
+li {
+  list-style: none;
+}
+html {
+  font-size: 100px;
+}
+#header .top {
+  height: 0.48rem;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  padding: 0.06rem 0.2rem;
+  background-color: #f44831;
+}
+#header .top .back {
+  width: 0.5rem;
+  height: 0.44rem;
+}
+#header .top .back a {
+  display: block;
+  line-height: 0.44rem;
+  width: 0.4rem;
+  font-weight: 400;
+  font-size: 0.4rem;
+  height: 0.4rem;
+  color: white;
+}
+#header .top p {
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+  line-height: 0.38rem;
+  font-weight: 700;
+  font-size: 0.22rem;
+}
+#header .top .download {
+  width: 0.15rem;
+  height: 0.25rem;
+  position: absolute;
+  right: 0.3rem;
+}
+#header .top .download a {
+  display: block;
+}
+#header .top .download a img {
+  width: 0.34rem;
+  height: 0.34rem;
+}
+#footer .login {
+  display: flex;
+  background-color: #161515;
+  border-bottom: 1px solid white;
+}
+#footer .login a {
+  display: block;
+  z-index: 22;
+  text-align: center;
+  line-height: 0.33rem;
+  width: 33%;
+  text-decoration: none;
+  border-right: 1px solid white;
+  color: aliceblue;
+}
+#footer .login a .icon-up {
+  background: url("../images/icon_bar.png");
+  background-position: -280px -23px;
+}
+#footer .login a:last-child {
+  border-right: 0;
+}
+#footer .download {
+  background-color: #161515;
+  border-bottom: 1px solid white;
+  height: 0.62rem;
+  padding: 0.14rem;
+  width: 100%;
+}
+#footer .download .zhongjainP {
+  width: 0.95rem;
+  height: 0.32rem;
+  line-height: 0.62rem;
+}
+#footer .download .zhongjainP a {
+  display: block;
+  height: 0.32rem;
+  width: 0.3rem;
+  text-align: center;
+  color: aliceblue;
+  font-size: 0.14rem;
+}
+#footer .download .zhongjainP i {
+  display: block;
+  color: aliceblue;
+}
+#footer .download p {
+  display: block;
+  font-size: 0.12rem;
+  line-height: 0.16rem;
+  width: 100%;
+  height: 0.3rem;
+  text-align: center;
+}
+#main {
+  padding-top: 0.55rem;
+}
+#main .tishi {
+  width: 100%;
+  height: 0.25rem;
+}
+#main .tishi p {
+  height: 0.25rem;
+  margin-bottom: 0;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  line-height: 0.35rem;
+}
+#main .Discount ul {
+  padding-left: 0;
+}
+#main .Discount ul li {
+  width: 100%;
+  height: 1.25rem;
+}
+#main .Discount ul li a {
+  width: 100%;
+  height: 1.25rem;
+  display: block;
+  padding: 0 0.08rem;
+}
+#main .Discount ul li a .lefttu {
+  width: 0.98rem;
+  height: 0.98rem;
+  float: left;
+}
+#main .Discount ul li a .lefttu img {
+  width: 0.98rem;
+  height: 0.98rem;
+}
+#main .Discount ul li a .rightwenzi {
+  width: 75%;
+  float: left;
+  height: 0.98rem;
+  padding: 0 0.1rem;
+}
+#main .Discount ul li a .rightwenzi h3 {
+  font-size: 0.14rem;
+  font-weight: normal;
+  line-height: 0.18rem;
+  color: black;
+}
+#main .Discount ul li a .rightwenzi p {
+  line-height: 0.10rem;
+  position: relative;
+  color: #1a1919;
+}
+#main .Discount ul li a .rightwenzi p i {
+  position: absolute;
+  right: 0.1rem;
+}
+#main .souye {
+  padding: 0.02rem 0;
+  width: 100%;
+  line-height: 0.35rem;
+  height: 0.50rem;
+}
+#main .souye .title {
+  width: 100%;
+  height: 0.35rem;
+  padding-left: 0.1rem;
+  background-color: #c4bebe;
+  border: 1px solid #afadad;
+}
+#main .souye .title a {
+  color: black;
+  display: inline-block;
+  line-height: 0.35rem;
+  font-size: 0.16rem;
+}
+#zhecao {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#zhecao .erros {
+  position: absolute;
+  right: 0.2rem;
+  top: 0.2rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  text-align: center;
+  border-radius: 8px;
+  background: whitesmoke ;
+  color: #111111;
+}
+#zhecao .tupian {
+  position: absolute;
+  display: block;
+  left: 10%;
+  top: 34%;
+  text-align: center;
+}

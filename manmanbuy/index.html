@@ -4,150 +4,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>主页</title>
+    <title>慢慢买的主页</title>
     <link rel="stylesheet" type="text/css" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/mui/css/mui.min.css">
     <link rel="stylesheet" type="text/css" href="lib/fontAwesome/css/font-awesome.css">
-    <link rel="stylesheet/less" href="less/index.less">
+    <link rel="stylesheet" href="less/base.css">
+    <link rel="stylesheet/less" href="less/shouye.less">
     <script src="lib/less/less.js"></script>
+    <script src="js/rem.js"></script>
 </head>
 
 <body>
+    <!-- 头部区域 -->
     <header id="header">
-        <a href="#" title="" class="logo">
-            <img src="http://static.manmanbuy.com/m/img/mlogo.png" alt="">
-        </a>
-        <form action="#">
-            <input type="search" name="">
-        </form>
-        <a href="#" title="" class="download">
-            下载
-        </a>
+        <header id="header" class="header">
+            <div class="logo">
+                <a href="#" title="慢慢买"><img src="images/header_logo.png" alt=""></a>
+            </div>
+            <div class="appdown">
+                <a href="##"><img src="images/header_app.png" alt="手机app下载"></a>
+            </div>
+        </header>
     </header>
+    <!-- 搜索区域 -->
+    <section id="form-search">
+        <form action="#" class="search"><input type="search" name="" id="" placeholder="请输入你想比价的商品"> <input type="button"
+                value="搜索"></form>
+    </section>
+    <!-- 主体区域 -->
     <main id="main">
-        <nav id="nav">
-            <div class="mui-row">
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-                <div class="mui-col-xs-3">
-                    <a href="#" title="">
-                        <img src="images/gengduo.png" alt="">
-                        <p>比价搜索</p>
-                    </a>
-                </div>
-            </div>
-        </nav>
-        <div id="productList">
-            <div class="title">
-                <span>超值折扣推荐</span>
-            </div>
-            <div class="content">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <div class="left">
-                                <img src="http://wnzk-img.zuyushop.com/r_img/img/20181029/16/4ea84814d68341d2a9bf39105d3cec26.jpg" alt="">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!-- 轮播图区域 -->
+                <section id="slide">
+                    <div id="slider" class="mui-slider">
+                        <div class="mui-slider-group mui-slider-loop">
+                            <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                            <div class="mui-slider-item mui-slider-item-duplicate">
+                                <a href="#">
+                                    <img src="images/banner05.jpg" alt="">
+                                </a>
                             </div>
-                            <div class="right">
-                                <p class="product-name">
-                                    双11预售：鸿星尔克 男童棉马甲
-                                    <span>89元包邮 （付20元定金立减40元）</span>
-                                </p>
-                                <div class="product-from">
-                                    天猫商城 | 10-29 17:04
-                                    <i class="icon-common"></i>
-                                    <span>0</span>
-                                </div>
+                            <!-- 第一张 -->
+                            <div class="mui-slider-item">
+                                <a href="#">
+                                    <img src="images/banner01.jpg" alt="">
+                                </a>
                             </div>
-                        </a>
-                    </li>
-                </ul>
+                            <!-- 第二张 -->
+                            <div class="mui-slider-item">
+                                <a href="#">
+                                    <img src="images/banner02.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- 第三张 -->
+                            <div class="mui-slider-item">
+                                <a href="#">
+                                    <img src="images/banner03.jpg" alt="">
+                            </div>
+                            <!-- 第四张 -->
+                            <div class="mui-slider-item">
+                                <a href="#">
+                                    <img src="images/banner04.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="mui-slider-item">
+                                <a href="#">
+                                    <img src="images/banner05.jpg" alt="">
+                                </a>
+                            </div>
+                            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                            <div class="mui-slider-item mui-slider-item-duplicate">
+                                <a href="#">
+                                    <img src="images/banner01.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mui-slider-indicator">
+                            <div class="mui-indicator mui-active"></div>
+                            <div class="mui-indicator"></div>
+                            <div class="mui-indicator"></div>
+                            <div class="mui-indicator"></div>
+                            <div class="mui-indicator"></div>
+                        </div>
+                    </div>
+                </section>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_bcj.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_bcj.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_bcj.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_bcj.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_bcj.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_bcj.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_bcj.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/ic_bcj.png" alt="">
+                                <p>比价搜索</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <section id="exhibition">
+                    <div class="seek">
+                        <h4>超值折扣推荐</h4>
+                        <a href="#" class="fa fa-angle-right"></a>
+                    </div>
+                </section>
+
+                <section id="letter">
+                    <a href="#">
+                        <div class="letter-left">
+                            <img src="images/ic_bcj.png" alt="">
+                        </div>
+                        <div class="letter-right">
+                            <div class="letter-up">
+                                撒豆成兵啥都差不多撒娇和慈善的出生地科技出生地基础班<i>U盾哈市将很大</i>
+                            </div>
+                            <div class="letter-next">
+                                大红色的 | <i>ddhkjadb</i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="letter-left">
+                            <img src="images/ic_bcj.png" alt="">
+                        </div>
+                        <div class="letter-right">
+                            <div class="letter-up">
+                                撒豆成兵啥都差不多撒娇和慈善的出生地科技出生地基础班<i>U盾哈市将很大</i>
+                            </div>
+                            <div class="letter-next">
+                                大红色的 | <i>ddhkjadb</i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="letter-left">
+                            <img src="images/ic_bcj.png" alt="">
+                        </div>
+                        <div class="letter-right">
+                            <div class="letter-up">
+                                撒豆成兵啥都差不多撒娇和慈善的出生地科技出生地基础班<i>U盾哈市将很大</i>
+                            </div>
+                            <div class="letter-next">
+                                大红色的 | <i>ddhkjadb</i>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+                <!-- 底部区域 -->
+
+                <footer id="fooer">
+                    <div class="base">
+                        <ul class="login-message">
+                            <li class="br">
+                                <a href="#">登录</a>
+                            </li>
+                            <li class="br">
+                                <a href="#">注册</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-arrow-up"></i>返回顶部</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="download">
+                        <a href="#">手机app下载</a>
+                        <a href="#">慢慢买手机版</a>
+                        <a href="#">--掌上比价平台</a>
+                    </div>
+                    <div class="website">m.manmanbuy.com</div>
+                </footer>
             </div>
         </div>
     </main>
-    <footer id="footer">
-        
-    </footer>
 
-    <script id="indexMenuTpl" type="text/html">
+    <script id="navTpl" type="text/html">
         {{each result value}}
-        <div class="mui-col-xs-3">
-            <a href="{{value.titlehref}}" title="">
-                <!-- 标签属于富文本 丰富的文本 当前的标签属于富文本 -->
-                <!-- 如果要解析富文本需要带@符号 -->
+        <li>
+            <a href="{{value.titlehref}}">
                 {{@value.img}}
                 <p>{{value.name}}</p>
             </a>
-        </div>
-        {{/each}}
-    </script>
-
-    <script id="moneyCtrlTpl" type="text/html">
-        {{each result value}}
-        <li>
-            <a href="#">
-                <div class="left">
-                    {{@value.productImgSm}}
-                </div>
-                <div class="right">
-                    <p class="product-name">
-                        {{value.productName}}
-                        <span>{{value.productPinkage}}</span>
-                    </p>
-                    <div class="product-from">
-                        {{value.productFrom}} | {{value.productTime}}
-                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                        <span>{{value.productComCount.replace('有','').replace('人评论','')}}</span>
-                    </div>
-                </div>
-            </a>
         </li>
-        {{/each}}
+    {{/each}}
     </script>
 
-    <script src="lib/mui/js/mui.js"></script>
+    <script id="letterTpl" type="text/html">
+
+        {{each result value}}
+    <a href="#">
+        <div class="letter-left">
+            {{@value.productImg2}}
+        </div>
+        <div class="letter-right">
+            <div class="letter-up">
+                {{value.productName}}<i>{{value.productPinkage}}</i>
+            </div>
+            <div class="letter-next">
+                {{value.productFrom}} | <i>{{value.productTime}}</i>
+            </div>
+        </div>
+    </a>
+    {{/each}}
+    </script>
+
+
+
+    <!-- <script src="lib/mui/js/mui.js"></script> -->
+    <script src="lib/mui/js/mui.min.js"></script>
     <script src="lib/zepto/zepto.min.js"></script>
     <script src="lib/artTemplate/template-web.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/shouye.js"></script>
 </body>
 
 </html>
